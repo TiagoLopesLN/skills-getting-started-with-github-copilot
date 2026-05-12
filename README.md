@@ -2,13 +2,50 @@
 
 <img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
 
-Hey TiagoLopesLN!
+This sample project is a simple FastAPI application that serves a static frontend and provides an API for viewing and signing up for extracurricular activities.
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+## Prerequisites
 
-Remember, it's self-paced so feel free to take a break! ☕️
+- Python 3.9+ installed
+- `pip` available
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/TiagoLopesLN/skills-getting-started-with-github-copilot/issues/1)
+## Quick Start
+
+1. Open a terminal in the project root.
+2. Create and activate a virtual environment:
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Start the app:
+
+   ```bash
+   python -m uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+5. Open the app in your browser:
+
+   - Frontend: `http://127.0.0.1:8000`
+   - API docs: `http://127.0.0.1:8000/docs`
+
+## Project Structure
+
+- `src/app.py` — FastAPI application and route definitions
+- `src/static/` — static frontend assets served by FastAPI
+- `requirements.txt` — Python dependencies
+
+## Usage
+
+- `GET /activities` — list all activities
+- `POST /activities/{activity_name}/signup?email=you@example.com` — sign up for an activity
 
 ---
 
